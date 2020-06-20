@@ -1,0 +1,333 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+   * { margin: 0 ; padding: 0  }
+html {
+  color: #222;
+  font-size: 1em;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   body{
+  overflow-x: hidden;
+   }
+/* ==========================================================================
+   Start Adventure
+   ========================================================================== */
+
+   #start-adventure{
+    background-image: url("../img/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 668px;
+    font-family: 'Montserrat', sans-serif;
+   }
+   header{
+     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 14,93;
+    color: whitesmoke;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.445);
+   }
+   #mid{
+  max-width: 996px;
+  width: 77,8%;
+  margin: 0 auto;
+  
+   }
+   #headertop{
+    max-width: 996px;
+    width: 77,8%;
+    margin: 0 auto;
+    line-height: 53px;
+   }
+
+   #telephone{
+    width: 206px;
+    height: 53px;
+    display: inline-block;
+   }
+   #mail{
+    display: inline-block;
+    height: 53px;
+   }
+   #logos, #user, #key{
+    float: right;
+    display: inline-block;
+    margin-left: 10px;
+    height: 53px;
+   }
+   #logos{
+    width: 200px;
+   }
+   #headerbottom{
+    max-width: 996px;
+    width: 77,8%;
+    margin: 0 auto;
+    height: 62px;
+    margin-top: 0;
+   }
+   #logo{
+    max-width: 104px;
+    width: 10.4%;
+    display: inline-block;
+    margin-top: 10px;
+    float: left;
+    height: 62px;
+   }
+   #logoimg{
+    width :100%;
+   }
+   #headerbottom nav ul{
+    
+   }
+   #headerbottom nav ul li{
+    display: inline-block;
+    float: right;
+    height: 59px;
+    line-height: 59px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    padding-left: 2%;
+    padding-right: 2%;
+   }
+   #headerbottom nav{
+    height: 62px;
+    
+   }
+   #headerbottom nav ul li:hover{
+border-bottom: 3px solid #b2a128;
+cursor: pointer;
+   }  main{
+    margin: 0 auto;
+    position: relative;
+   }
+#titletext{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 690px;
+  margin-top: 150px;
+}
+#titletext h1{
+  text-align: center;
+  font-size: 62px;
+  color: whitesmoke;
+  margin-bottom: 0;
+}
+#titletext h5{
+  text-align: center;
+  font-size: 35px;
+  color: whitesmoke;
+  letter-spacing: 10px;
+  margin-top: 0;
+}
+#titletext p{
+  text-align: center;
+  font-size: 15px;
+  color: whitesmoke;
+  margin-top: 0;
+}
+#clickhere{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color:#f1df67;
+  width: 173px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: none;
+  height: 45px;
+}
+/* ==========================================================================
+   Search
+   ========================================================================== */
+#search{
+  height: 267px;
+  background-image: url("../img/find.png");
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  max-width: 1280px;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  display: table;
+}
+#search content{
+  display: table-cell;
+  vertical-align: middle;
+
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search h2{
+font-size: 29.63pt;
+}
+input{
+display: inline-block;
+height: 28px;
+margin-left: 10px;
+border-radius: 5px;
+font-size: medium;
+border: none;
+padding: 5px;
+}
+#search table tr td{
+text-align: left;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ /* ==========================================================================
+   Responsive
+   ========================================================================== */
+.hidden {
+  display: none !important;
+}
+
+
+@media all and (max-width: 768px) {
+  #headerbottom nav ul li{
+    display:table;
+    margin:0px auto 0px auto;
+    float: none;
+    height: 1em;
+    }
+    header{
+      height: 768px;
+      }
+    #telephone, #mail, #logos, #user, #key{
+  float: none;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+
+
+/* 
+|
+|
+|
+V
+#telephone, #mail, #logos, #user, #key{
+  float: none;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  #logo{
+  width: 100%;
+
+  }
+  #headerbottom nav ul li{
+  width: 100%;
+  float: none;
+  }
+  #headerbottom{
+    height: auto;
+    padding-left: 15px;
+  }
+  header{
+  height: 100%;
+  } */

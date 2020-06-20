@@ -1,0 +1,1827 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Start Adventure
+   ========================================================================== */
+
+#start-adventure {
+    background-image: url("../img/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 668px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 14, 93;
+    color: whitesmoke;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+#mid {
+    max-width: 946px;
+    width: 77, 8%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+#headertop {
+    max-width: 996px;
+    width: 77, 8%;
+    margin: 0 auto;
+    line-height: 53px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+#telephone {
+    height: 53px;
+    display: inline-block;
+    width: 19%;
+}
+
+#mail {
+    display: inline-block;
+    height: 53px;
+}
+.right{
+    float: right;
+}
+#logos{
+width: 182px;
+}
+#user{
+    width: 81px;
+}
+#key{
+    width: 91px;
+}
+#logos, #user, #key {
+    float: left;
+    display: inline-block;
+    height: 53px;
+}
+
+.headerlogos{
+    color:  #ffdd00;
+}
+#headerbottom {
+    max-width: 996px;
+    width: 77, 8%;
+    margin: 0 auto;
+    height: 62px;
+    margin-top: 0;
+    padding-left: 5px;
+}
+
+#logo {
+    max-width: 104px;
+    display: inline-block;
+    margin-top: 10px;
+    float: left;
+    height: 62px;
+}
+
+#logoimg {
+    width: 100%;
+}
+
+#headerbottom #navigation ul li {
+    display: inline-block;
+    float: right;
+    height: 59px;
+    line-height: 59px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 5px;
+}
+
+#headerbottom #navigation {
+    height: 62px;
+}
+
+#headerbottom #navigation ul li:hover {
+    border-bottom: 3px solid #b2a128;
+    cursor: pointer;
+}
+
+#hamburger {
+    margin: 10px;
+    display: none;
+}
+
+.hidden {
+    display: block;
+}
+
+header main {
+    margin: 0 auto;
+    position: relative;
+}
+
+#description {}
+
+.show {
+    display: block;
+}
+
+#titletext {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 690px;
+    margin-top: 150px;
+}
+
+#titletext h1 {
+    text-align: center;
+    font-size: 62px;
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+
+#titletext h5 {
+    text-align: center;
+    font-size: 35px;
+    color: whitesmoke;
+    letter-spacing: 10px;
+    margin-top: 0;
+}
+
+#titletext p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: whitesmoke;
+    margin-top: 0;
+}
+
+#clickhere {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #f1df67;
+    width: 173px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    height: 45px;
+    margin-top: 0px;
+}
+#clickhere:hover{
+    cursor: pointer;
+}
+/* ==========================================================================
+   Search
+   ========================================================================== */
+
+#search {
+    height: 267px;
+    background-image: url("../img/find.png");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 1280px;
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+}
+
+#search content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search h2 {
+    font-size: 29.63pt;
+}
+
+input {
+    display: inline-block;
+    height: 28px;
+    margin-left: 15px;
+    border-radius: 5px;
+    font-size: medium;
+    border: none;
+    padding: 3px;
+    padding-left: 5px;
+}
+
+.labels2 {
+    display: none;
+}
+
+#search table tr td {
+    text-align: left;
+}
+
+/* ==========================================================================
+   Split
+   ========================================================================== */
+
+.split {
+    max-width: 1280px;
+    width: 100%;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.split #left {
+    float: left;
+    max-width: 640px;
+    width: 50%;
+    height: 490px;
+    background: url("../img/belowdatabase_left.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.split #right {
+    float: right;
+    max-width: 640px;
+    width: 50%;
+    height: 490px;
+    background: url("../img/belowdatabase_right.png");
+    background-repeat: no-repeat;
+}
+
+.split #right article {
+    margin-left: 7%;
+    margin-top: 70px;
+    margin-right: 15%;
+}
+
+.split #right article h1 {
+    font-size: 175%;
+}
+
+.split #right article h4 {
+    margin-bottom: 15px;
+}
+
+.split #right article .checks table {
+    float: left;
+}
+
+.split #right article .checks table tr td {
+    padding-bottom: 15px;
+    vertical-align: top;
+}
+
+.split #right article .checks table tr td span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.025vw;
+}
+
+.split #right article .checks table tr .rightofchecks {
+    padding-left: 20px;
+    font-weight: 150%;
+}
+
+/* ==========================================================================
+   Below_split
+   ========================================================================== */
+
+#below_split {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 1280px;
+    height: 549px;
+    display: inline-block;
+    border-bottom: 1px;
+}
+
+#below_split article {
+    margin-top: 60px;
+}
+
+#below_split article h1 {
+    font-size: 175%;
+    text-align: center;
+}
+
+#below_split .inner_split {
+    max-width: 1280px;
+    width: 100%;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#below_split .inner_split #inner_left {
+    float: left;
+    max-width: 640px;
+    width: 50%;
+    height: 490px;
+    display: inline-block;
+}
+
+#below_split .inner_split #inner_left article .checks table {
+    float: left;
+}
+
+#below_split .inner_split #inner_left article .checks table tr td {
+    padding-bottom: 30px;
+    vertical-align: top;
+    height: 63px;
+}
+
+#below_split .inner_split #inner_left article .checks table tr td span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#below_split .inner_split #inner_left article .checks table tr .rightofchecks {
+    padding-left: 20px;
+    font-weight: 150%;
+}
+
+#below_split .inner_split #inner_right {
+    max-width: 640px;
+    width: 45%;
+    margin-right: 5%;
+    height: 490px;
+    display: inline-block;
+}
+
+#below_split .inner_split #inner_left article {
+    margin-left: 19%;
+}
+
+#below_split .inner_split #inner_right article {
+    margin-left: 7%;
+    float: left;
+}
+
+#below_split .inner_split #inner_right article .checks table {
+    float: left;
+}
+
+#below_split .inner_split #inner_right article .checks table tr td {
+    padding-bottom: 30px;
+    height: 63px;
+    vertical-align: top;
+}
+
+#below_split .inner_split #inner_right article .checks table tr td span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#below_split .inner_split #inner_right article .checks table tr .rightofchecks {
+    padding-left: 20px;
+    font-weight: 150%;
+}
+
+/* ==========================================================================
+   Three Tours
+   ========================================================================== */
+
+#three_tours {
+    background-image: url("../img/three_tours.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #00a4ff;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+}
+
+#three_tours h2 {
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-top: 10vw;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#three_tours ul {
+    list-style-type: none;
+    width: 82%;
+    margin: 0 auto;
+}
+
+#three_tours ul li {
+    width: 31%;
+    display: inline-block;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+
+#three_tours ul li .smaller-top {
+    background-color: white;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+#three_tours ul li .smaller-bottom {
+    background-color: white;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+#three_tours ul li .smaller-bottom .checkmarks {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 11px;
+}
+
+#three_tours ul li .smaller-bottom .checkmarks table tr td {
+    padding-right: 5%;
+white-space: nowrap;
+}
+
+#three_tours ul li .bigger {
+    height: 52px;
+    line-height: 52px;
+    width: 100%;
+    background-color: #f0d839;
+    display: block;
+    font-size: 23px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#three_tours ul li .icon {
+    width: 100%;
+    height: 95px;
+    line-height: 95px;
+    font-size: 60px;
+    text-align: center;
+}
+
+#three_tours ul li h3 {
+    text-align: center;
+    font-weight: 100;
+}
+
+/* ==========================================================================
+   No Sym Split
+   ========================================================================== */
+
+#no_sym_split {
+font-family: 'Montserrat', sans-serif;
+margin: auto;
+display: inline-block;
+margin-top: 71px;
+margin-bottom: 71px;
+}
+
+#no_sym_split #inner_split {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+#no_sym_split #left {
+    width: 40%;
+    float: left;
+    height: 100px;
+}
+#no_sym_split #left #left_img{
+max-width: 335px;
+height: 29vw;
+border-radius: 12px;
+}
+#no_sym_split #right {
+    width: 59%;
+    float: right;
+}
+#no_sym_split #right h2{
+    letter-spacing: 1px;
+    font-size: 1.7vw;
+    line-height: 2.734vw;
+    font-weight: 1;
+    margin-bottom: 2vw;
+}
+#no_sym_split #right #bar_horizontal{
+    max-width: 565px;
+    width: 95.10%;
+    font-size: 34px;
+    height: 5.5vw;
+    border: 1px solid #00a4ff;
+    background-color: white;
+    display: flex;
+    margin-bottom: 2.65vw;
+}
+#no_sym_split #right #bar_horizontal #arrow_1{
+background-color: #00a4ff;
+clip-path: polygon(0% 0%, 89% 0, 100% 50%, 89% 100%, 0% 100%);
+height: 100%;
+width: 32%;
+padding-left: 4%;
+padding-right: 2%;
+display: inline-block;
+line-height: 5.5vw;
+}
+#no_sym_split #right #bar_horizontal #arrow_1 span{
+font-size: 18px;
+color: white;
+vertical-align: middle;
+letter-spacing: 0.5px;
+font-weight: 100;
+margin-left: 1%;
+}
+#no_sym_split #right #bar_horizontal #arrow_2{
+background-color:#e4e4e4;
+height: 100%;
+font-size: 36px;
+width: 27%;
+clip-path: polygon(89% 0, 100% 50%, 89% 100%, 0% 100%, 11% 50%, 0% 0%);
+display: inline-block;
+margin-left: -25px;
+line-height: 5.5vw;
+padding-left: 10%;
+}
+
+#no_sym_split #right #bar_horizontal #arrow_3{
+    display: inline-block;
+    width: 26%;
+    line-height: 5.5vw;
+    font-size: 36px;
+    padding-left: 5%;
+    }
+    
+#no_sym_split #right #bar_horizontal #arrow_2 span{
+    font-size: 18px;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    margin-left: 1%;
+    }
+    #no_sym_split #right #bar_horizontal #arrow_3 span{
+        font-size: 18px;
+        vertical-align: middle;
+        display: inline-block;
+        letter-spacing: 0.5px;
+        font-weight: 100;
+        margin-left: 1%;
+        }
+        #no_sym_split #right p{
+            font-size: 0.95vw;
+            line-height: 1.563vw;
+            padding-right: 16%;
+        }
+    .outer{
+        margin-top: 3.5vw;
+        display: block;
+    }
+    .outer a{
+        padding: 1.172vw 3.516vw;
+        background-color: #f7de3a;
+        border-radius: 6px;
+        font-size: 1.016vw; 
+    }
+    .outer a:hover{
+        cursor: pointer;
+    }
+/* ==========================================================================
+   Pack and go
+   ========================================================================== */
+
+#pack_and_go {
+    background-image: url("../img/pack_and_go.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #00a4ff;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+}
+
+#pack_and_go h2 {
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+#pack_and_go ul {
+    list-style-type: none;
+    width: 78.125%;
+    margin: 0 auto;
+}
+
+#pack_and_go ul li {
+    width: 33%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 9px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+
+#pack_and_go ul li:nth-of-type(1), #pack_and_go ul li:nth-of-type(3) {
+    margin-top: 15px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.0), 0 0 0 2px rgba(0, 0, 0, 0), 0.3em 0.3em 1em rgba(0, 0, 0, 0.5);
+}
+
+#pack_and_go ul li:nth-of-type(2) {
+    clip-path: polygon(48% 0, 100% 0, 100% 79%, 49% 96%, 0 79%, 0 0);
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 532px;
+}
+
+#pack_and_go ul li:nth-of-type(2) span {
+    font-size: 12px;
+}
+
+#pack_and_go ul li:nth-of-type(2) span.money {
+    font-size: 28px;
+    margin-top: 21px;
+    margin-bottom: 38px;
+}
+
+#pack_and_go ul li:nth-of-type(2) span.city {
+    margin-bottom: 21px;
+}
+
+#pack_and_go ul li:nth-of-type(2) span.city {
+    margin-bottom: 19px;
+    margin-top: 12px;
+}
+
+#pack_and_go ul li:nth-of-type(2) span a {
+    padding: 13px 36px;
+    font-size: 10px;
+}
+
+#pack_and_go ul li img {
+    width: 100%;
+}
+
+#pack_and_go ul li span {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    line-height: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#pack_and_go ul li span.money {
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 31px;
+}
+
+#pack_and_go ul li span.city {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+#pack_and_go ul li span.nights {
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+#pack_and_go ul li span a {
+    padding: 10px 28px;
+    background-color: #f7de3a;
+    border-radius: 6px;
+    font-size: 8px;
+}
+#pack_and_go ul li span a:hover {
+cursor: pointer;
+}
+/* ==========================================================================
+   Go Exploore
+   ========================================================================== */
+
+   #go_explore {
+    background-image: url("../img/go_explore.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 30px;
+}
+
+#go_explore h2 {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 500;
+    padding-top: 10vw;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#go_explore ul {
+    list-style-type: none;
+    width: 78.125%;
+    margin: 0 auto;
+}
+
+#go_explore ul li {
+    width: 30%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 9px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    vertical-align: top;
+    margin-left: 2%;
+}
+
+
+#go_explore ul li img {
+    width: 100%;
+}
+
+#go_explore ul li span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 59px;
+    margin-right: 59px;
+
+}
+
+#go_explore ul li span.btn {
+    margin-top: -5px;
+}
+
+#go_explore ul li span.city {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+#go_explore ul li span a {
+    padding: 10px 28px;
+    background-color: #f7de3a;
+    border-radius: 6px;
+    font-size: 8px;
+}
+#go_explore ul li span a:hover {
+cursor: pointer;
+}
+/* ==========================================================================
+   New York Paris
+   ========================================================================== */
+
+#new_york_paris{
+    height: 675px;
+    display: block;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5.3125%;
+    margin-left: 3%;
+    background-image: url("../img/new_york_paris.png");
+    background-repeat: no-repeat;
+}
+#new_york_paris article{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 51.328125%;
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    width: 37%;
+    max-width: 478px;
+    border-radius: 10px;
+    padding: 2.5%;
+    background-color: white;
+    box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+#new_york_paris article figure img{
+    width: 70%;
+    max-width: 262px;
+}
+#new_york_paris article h5{
+    font-size: 19px;
+    margin-top: 15px;
+}
+#new_york_paris article table.t_one{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+    margin-left: 10px;
+    display: block;
+}
+#new_york_paris article table.t_one tr td{
+    font-size: 22px;
+    margin-right: 35px;
+    display: inline-block;
+    text-align: center;
+
+}
+#new_york_paris article p{
+    text-align: left;
+    font-size: 15px;
+}
+#new_york_paris article table.t_two{
+    margin-left: inherit;
+    margin-right: inherit;
+}
+#new_york_paris article table.t_two tr{
+    display: inline-block;
+    height: 50px;
+}
+#new_york_paris article table.t_two tr td{
+    margin-right: 0;
+    display: inline-block;
+}
+#new_york_paris article table.t_two tr td.money2 {
+    font-size: 38px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 60px;
+}
+#new_york_paris article table.t_two tr td a{
+padding: 14px 36px;
+font-size: 15px;
+background-color: #f7de3a;
+border-radius: 6px;
+
+}
+#new_york_paris article table.t_two tr td a:hover{
+cursor: pointer;
+}
+/* ==========================================================================
+   Reviews
+   ========================================================================== */
+    #reviews{
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        background-image: url("../img/reviews.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 474px;
+        color: white;
+        margin-top: -100px;
+    }
+    #reviews content{
+        max-width: 766px;
+        width: 90%;
+        height: 20px;
+        padding-top: 85px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #reviews content h2 {
+        font-size: 26px;
+        line-height: 35px;
+        margin-bottom: 20px;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        text-align: center;
+
+    }
+    #reviews content .stars{
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+    #reviews content span{
+        font-size: 12.5px;
+    }
+    #reviews content .fa-star{
+        margin-left: 1%;
+        font-size:  18px;
+        margin-right: 1%;
+        color:  #ffdd00;
+    }
+    #reviews content table{
+        text-align: left;
+    }
+    #reviews content table tr td figure{
+        background-image: url("../img/reviews_face.png");
+        background-repeat: no-repeat;
+        height: 62px;
+        width: 62px;
+        border-radius: 50%;
+        margin-right: 13px;
+    }
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+    #contact{
+        margin-top: -5px;
+        background-image: url("../img/contact.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #contact figcaption{
+        max-width: 300px;
+        padding-top: 105px;
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+    }
+    #contact figcaption h2 {
+        font-size: 27px;
+        line-height: 45px;
+        margin-bottom: 29px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    #contact figcaption .fa-map-marker-alt{
+        font-size: 160px;    
+    }
+    #contact ul{
+        text-align: left;
+        display: table;
+        padding-top: 50px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    #contact  ul li{
+        display: inline-block;
+    }
+    #contact  ul li figure{
+        height: 62px;
+        width: 62px;
+        margin-right: 20px;
+    }
+    #contact  ul li article span{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    #contact  ul li h3{
+        font-weight: 100;
+        margin-bottom: 5px;
+    }
+    #contact  ul li:nth-of-type(3), #contact  ul li:nth-of-type(5){
+        padding-left: 12.5%;
+    }
+    .responsive{
+        display: none;
+    }
+/* ==========================================================================
+   Circles
+   ========================================================================== */
+
+#circles {
+    height: 200px;
+    background-color: white;
+}
+
+#circles ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#circles ul li {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 30px;
+    border: 3px solid rgb(241, 241, 5);
+    border-radius: 50%;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer{
+    height: 147px;
+    line-height: 147px;
+    background-color: #f0d839;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media all and (max-width: 1300px) {
+    #contact figcaption{
+        padding-top: 8vw;
+        max-width: 500px;
+        width: 60%;
+    }
+    #contact figcaption h2{
+        margin-bottom: 2.8vw;
+        line-height: 3vw;
+    }
+    #contact ul li:nth-of-type(3), #contact ul li:nth-of-type(5){
+        padding-left: 7.5%;
+    }
+    #contact ul li figure {
+        margin-right: inherit;
+    }
+#contact figcaption .fa-map-marker-alt{
+    font-size: 12.500vw;   
+}
+#contact ul{
+    display: table;
+        width: 60%;
+}
+}
+@media all and (max-width: 1200px) {
+    #contact ul{
+        display: table;
+            width: 65%;
+    }
+
+}
+@media all and (max-width: 1090px) {
+    .db_where {
+        width: 15.891vw !important;
+    }
+    .db_check_in {
+        width: 13.047vw !important;
+    }
+    .db_check_out {
+        width: 13.047vw !important;
+    }
+    .db_adult {
+        width: 8.359vw !important;
+    }
+    .db_child {
+        width: 8.359vw !important;
+    }
+    .db_button {
+        width: 11.516vw !important;
+    }
+    #new_york_paris article{
+        padding-bottom: 80px;
+    }
+        #new_york_paris article table.t_one{
+        margin: 0 auto;
+        display: block;
+        float: right;
+    }
+    #new_york_paris article table.t_one tr td{
+        margin-right: 22px;
+    }
+    #new_york_paris article figure{
+        margin: 0 auto;
+        display: block;
+    }
+    
+    #new_york_paris article{
+        text-align: center;
+    }
+    #new_york_paris article table.t_two tr td{
+        width: 100%;
+        display: inline-block;
+    }
+    #contact ul{
+        display: table;
+        width: 75%;
+    }
+    #contact ul li figure {
+        margin-right: 5px;
+    }
+
+}
+
+/*   */
+
+@media all and (max-width: 1000px) {
+    #pack_and_go ul {
+        width: 95%;
+    }
+    #three_trips ul {
+        width: 95%;
+    }
+    
+    #go_explore ul{
+        width: 100%;
+    }
+    #go_explore ul li span {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    }
+    #go_explore ul li span a {
+        padding: 5px 14px;
+        background-color: #f7de3a;
+        border-radius: 6px;
+        font-size: 8px;
+    }
+    #go_explore ul li span.btn {
+        margin-top: -5px;
+    }
+    #contact ul{
+        display: table;
+        width: 85%;
+    }
+
+}
+
+@media all and (max-width: 875px) {
+    #pack_and_go ul {
+        width: 65%;
+    }
+    #pack_and_go h2 {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 1000;
+    }
+    #pack_and_go ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #pack_and_go ul li span, #pack_and_go ul li:nth-of-type(2) span {
+        font-size: 15px;
+    }
+    #pack_and_go ul li:nth-of-type(2) {
+        clip-path: none;
+        margin-left: 0;
+        margin-right: 0;
+        height: inherit;
+    }
+    #three_tours ul {
+        width: 65%;
+    }
+    #three_tours h2 {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 1000;
+    }
+    #three_tours ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #three_tours ul li span, #three_tours ul li:nth-of-type(2) span {
+        font-size: 15px;
+    }
+    #three_tours ul li:nth-of-type(2) {
+        clip-path: none;
+        margin-left: 0;
+        margin-right: 0;
+        height: inherit;
+    }
+#three_tours ul li .smaller-bottom .checkmarks table tr td {
+    white-space: inherit;
+}
+#no_sym_split {
+margin-top: 5.547vw;
+margin-bottom: 5.547vw;
+}
+
+#no_sym_split #right h2{
+    letter-spacing: 1px;
+    font-size: 3.75vw;
+    line-height: 4.25vw;
+    font-weight: 1;
+    margin-bottom: 2vw;
+}
+#no_sym_split #right p{
+    font-size: 2vw;
+    line-height: 2.5vw;
+    padding-right: 0;
+}
+#no_sym_split #right{
+    float: left;
+}
+#no_sym_split #left #left_img{
+    height: 42vw;
+}
+#no_sym_split #left{
+    width: 40%;
+}
+
+#no_sym_split #right #bar_horizontal #arrow_1, #no_sym_split #right #bar_horizontal #arrow_1 span, #no_sym_split #right #bar_horizontal #arrow_2,#no_sym_split #right #bar_horizontal #arrow_2 span,#no_sym_split #right #bar_horizontal #arrow_3,#no_sym_split #right #bar_horizontal #arrow_3 span {
+    font-size: 2.656vw;
+}
+#no_sym_split #inner_split {
+    width: 90%;
+}
+.outer{
+    margin-top: 5vw;
+    display: block;
+}
+.outer a{
+    padding: 1.5vw 3.9vw;
+    background-color: #f7de3a;
+    border-radius: 6px;
+    font-size: 2.5vw;
+}
+#center_res{
+display: block;
+margin-right: auto;
+margin-left: auto;
+width: 50%;
+}
+
+#new_york_paris article{
+    width: 60%;
+    left: 40%;
+}
+#contact ul{
+    width: 82.5%;
+}
+#contact ul li:nth-of-type(3), #contact ul li:nth-of-type(5){
+    padding-left: 7.5%;
+}
+#contact ul li figure{
+    margin-right: 0px;
+    width: 40px;
+}
+
+}
+@media all and (max-width: 768px) {
+    #hamburger {
+        background-image: url("../img/hamburger.png");
+        background-size: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, 0);
+        width: 40px;
+        height: 40px;
+        border: none;
+    }
+    #logo {
+        margin-top: 0px;
+        max-width: inherit;
+    }
+    #logoimg {
+        width: 102px;
+    }
+    #titletext {
+        margin-top: 60px;
+    }
+    #titletext h1 {
+        font-size: 8vw;
+    }
+    #titletext h5 {
+        font-size: 4vw;
+        letter-spacing: 2vw;
+    }
+    #mid {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px;
+    }
+    #headerbottom #navigation ul li {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 3%;
+        display: block;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.445);
+    }
+    #headerbottom #navigation ul {
+        margin-top: 12px;
+    }
+    #headerbottom {
+        border-bottom: 1px solid whitesmoke;
+        padding-left: 10px;
+    }
+    #headertop {
+        padding-left: 10px;
+    }
+    .hidden {
+        display: none;
+    }
+    #search {
+        display: block;
+        height: inherit;
+    }
+    #search content {
+        margin-left: auto;
+        padding-top: 20px;
+        display: block;
+        margin-right: auto;
+    }
+    #search content table tr td.alwayshundred {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    #search content table tr td {
+        display: inline-block;
+        width: 47.5%;
+        text-align: center;
+    }
+    .labels {
+        display: none;
+    }
+    .labels2 {
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    #clickhere {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #search content table {
+        margin-left: 10px;
+    }
+    .db_where {
+        width: 90% !important;
+    }
+    .db_check_in {
+        width: 90% !important;
+    }
+    .db_check_out {
+        width: 90% !important;
+    }
+    .db_adult {
+        width: 90% !important;
+    }
+    .db_child {
+        width: 90% !important;
+    }
+    .db_button {
+        width: inherit !important;
+    }
+    #circles ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    #circles ul li {
+        margin-top: 10px;
+    }
+    .split #left {
+        width: 100%;
+        max-width: none;
+    }
+    .split #right {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .split #right article {
+        margin-top: 0px;
+        padding-top: 20px;
+        margin-right: 12%;
+    }
+    .split #right article h1 {
+        font-size: 150%;
+    }
+    .split #right article .checks table tr td span {
+        font-size: 70%;
+    }
+    .split #right article h4 {
+        font-size: 90%;
+        margin-bottom: 20px;
+    }
+#below_split article{
+margin-top: 25px;
+}
+#below_split article h1{
+font-size: 5vw;
+}
+ #below_split .inner_split #inner_left article .checks table tr{
+margin-bottom: -10px;
+}
+ #below_split .inner_split #inner_right article .checks table tr{
+margin-bottom: -10px;
+}
+#below_split .inner_split #inner_left article .checks table tr .rightofchecks{
+font-size: 2.5vw;
+}
+#below_split .inner_split #inner_right article .checks table tr .rightofchecks{
+
+font-size: 2.5vw;
+}
+ #below_split .inner_split #inner_right article .checks table tr .icons {
+        padding-right: 20px !important;
+        width: 65px !important;
+    }
+    #below_split .inner_split #inner_left article .checks table tr .icons {
+        padding-right: 20px !important;
+        width: 65px !important;
+    }
+    #below_split .inner_split #inner_left {
+        float: none;
+        max-width: 1280px;
+        width: 100%;
+        height: inherit;
+    }
+    #below_split .inner_split #inner_left article {
+        margin-left: 4%;
+    }
+    #below_split .inner_split #inner_right {
+        float: none;
+        max-width: 1280px;
+        width: 100%;
+        height: inherit;
+margin-right: 0px;
+    }
+    #below_split .inner_split #inner_right article {
+        margin-left: 2%;
+    }
+    #contact ul li article span {
+        font-size: 9px;
+    }
+    #contact ul{
+        width: 70%;
+    }
+    #contact ul li:nth-of-type(3), #contact ul li:nth-of-type(5){
+        padding-left: 5%;
+    }
+
+}
+
+@media all and (max-width: 695px) {
+    #telephone, #mail, #logos, #user, #key {
+        width: inherit;
+        float: none;
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 2vw;
+    }
+    #pack_and_go ul {
+        width: 70%;
+    }
+    #three_tours ul {
+        width: 70%;
+    }
+    #new_york_paris article{
+        width: 60%;
+        left: 10%;
+    }
+    #reviews content{
+        padding-top: 45px;
+    }
+    #reviews content h2 {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 10px;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        text-align: center;
+
+    }
+    #contact ul{
+        width: 82%;
+    }
+    #contact figcaption{
+        padding-top: 2vw;
+        max-width: 500px;
+        width: 90%;
+    }
+    #contact figcaption h2{
+        margin-bottom: 2.26vw;
+        line-height: 7vw;
+        font-size: 5vw;
+}
+
+
+}
+@media all and (max-width: 600px) {
+    #contact ul{
+        width: 90%;
+    }
+#contact  ul li h3{
+    font-size: 10px;
+}
+#circles ul {
+    width: 50%;
+    margin-top: 25px;
+}
+
+#circles ul li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    border: 3px solid rgb(241, 241, 5);
+    border-radius: 50%;
+}
+}
+@media all and (max-width: 500px) {
+.responsive{
+    display: block;
+}
+    #contact ul{
+        width: 90%;
+    }
+#contact  ul li article span{
+    font-size: 8px;
+    font-weight: bold;
+}
+#contact  ul li:nth-of-type(3), #contact  ul li:nth-of-type(5){
+    padding-left: 3%;
+}
+#contact  ul li figure{
+    height: 20px;
+    width: 20px;
+    margin-right: 0px;
+}
+
+}
+@media all and (max-width: 420px) {
+#start-adventure {
+height: 485px;
+}
+.split #left {
+height: 310px;
+}
+.split #right {
+float: right;
+}
+#go_explore ul li span {
+    font-size: 6px;
+    line-height: 10px;
+}
+
+#go_explore ul li span.city {
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+#headerbottom #navigation ul li {
+height: 56px;
+line-height: 56px;
+}
+    #telephone, #mail, #logos, #user, #key {
+        width: inherit;
+        float: none;
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 2vw;
+    }
+    #search content table tr td.alwayshundred {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    #search content table tr td {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    #pack_and_go ul li span {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #three_tours ul li span {
+        margin-left: 0;
+        margin-right: 0;
+    }
+#no_sym_split #right #bar_horizontal #arrow_1, #no_sym_split #right #bar_horizontal #arrow_2, #no_sym_split #right #bar_horizontal #arrow_3{
+    width: 30%;
+margin-left: 0;
+}
+.outer{
+    margin-top: 2vw;
+    display: block;
+}
+.split #right{
+height: 500px;
+}
+#three_tours h2{
+font-size: 20px;
+}
+#new_york_paris {
+    margin-right: 0;
+overflow-y:auto;  
+ overflow-x:hidden;
+}
+#new_york_paris article{
+    width: 80%;
+    left: 10%;
+}
+#new_york_paris article table.t_one tr td{
+    margin-right: 16px;
+}
+#new_york_paris article table.t_one tr td {
+font-size: 18px;
+}
+#circles {
+    height: 75px;
+}
+#circles ul {
+    width: 90%;
+    margin-top: 25px;
+}
+
+#circles ul li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 7.5px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    border: 3px solid rgb(241, 241, 5);
+    border-radius: 50%;
+}
+#contact{
+overflow-y:auto;  
+ overflow-x:hidden;
+}
+#contact ul{
+    width: 87.5%;
+}
+#contact  ul li{
+    display: inline-block;
+}
+#contact  ul li figure{
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+}
+#contact  ul li article span{
+    font-size: 5px;
+    font-weight: bold;
+}
+#contact  ul li h3{
+    font-weight: 100;
+    margin-bottom: 5px;
+    font-size: 8px;
+}
+#contact  ul li:nth-of-type(3), #contact  ul li:nth-of-type(5){
+    padding-left: 2%;
+}
+}
+
+/* 
+|
+|
+|
+V
+#telephone, #mail, #logos, #user, #key{
+  float: none;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  #logo{
+  width: 100%;
+
+  }
+  #headerbottom nav ul li{
+  width: 100%;
+  float: none;
+  }
+  #headerbottom{
+    height: auto;
+    padding-left: 15px;
+  }
+  header{
+  height: 100%;
+  } */

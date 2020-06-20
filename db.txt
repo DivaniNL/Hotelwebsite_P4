@@ -1,0 +1,147 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Gegenereerd op: 20 jun 2020 om 11:57
+-- Serverversie: 5.7.26
+-- PHP-versie: 7.3.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `bookings`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `booking`
+--
+
+CREATE TABLE `booking` (
+  `id` int(100) NOT NULL,
+  `hotel_id` int(50) NOT NULL,
+  `check_in` date NOT NULL,
+  `check_out` date NOT NULL,
+  `adults` int(10) NOT NULL,
+  `children` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `hotel`
+--
+
+CREATE TABLE `hotel` (
+  `id` int(100) NOT NULL,
+  `company` varchar(100) NOT NULL,
+  `street` varchar(100) NOT NULL,
+  `building` varchar(50) NOT NULL,
+  `postal_code` varchar(50) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `country` varchar(100) NOT NULL,
+  `continent` varchar(100) NOT NULL,
+  `telephone` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `rooms` int(10) NOT NULL,
+  `stars` int(5) NOT NULL,
+  `geo_lat` varchar(50) NOT NULL,
+  `geo_long` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `hotel`
+--
+
+INSERT INTO `hotel` (`id`, `company`, `street`, `building`, `postal_code`, `city`, `country`, `continent`, `telephone`, `email`, `url`, `rooms`, `stars`, `geo_lat`, `geo_long`) VALUES
+(1, 'Skyna Luanda', 'Rua de Portugal', '29', '', 'Luanda', 'Angola', 'Africa', '+244-222-670900', 'reservas.lad@skynahotels.com', 'www.skynahotels.com', 236, 4, '-8.816315687788876', '13.234682411130052'),
+(2, 'Sakkara Inn', 'Sakkara Road', '20', '', 'Giza', 'Egypt', 'Africa', '+20-2-34284251', 'info@sakkarainnhotel.com', 'www.sakkarainnhotel.com', 7, 0, '29.89082264132472', '31.214035749435425'),
+(3, 'Sea Gull Hurghada', 'Sheraton Road', '', '', 'Hurghada', 'Egypt', 'Africa', '+20-65-3440351', 'info@hurghadaseagull.com', 'www.hurghadaseagull.com', 710, 4, '27.216326647816715', '33.83999213576317'),
+(4, 'Grand Oasis', 'Sharks Bay', '', '', 'Sharm El Sheikh', 'Egypt', 'Africa', '+20-69-3603930', 'marketing@lookhotelsint.com', 'www.lookhotelsint.com', 461, 4, '27.9570883446373', '34.39023792743683'),
+(5, 'Tranquility Bay', 'Bolands', '', '', 'Bolans', 'Antigua and Barbuda', 'America', '+1-268-5625183', 'info@tranquilitybayantigua.com', 'www.tranquilitybayantigua.com', 75, 4, '17.066815611253254', '-61.887601017951965'),
+(6, 'Accra', 'Rockley Beach', '', 'BB15139', 'Rockley', 'Barbados', 'America', '+1-246-4358920', 'salesmanager@accrabeachhotel.com', 'www.accrabeachhotel.com', 224, 4, '13.074867474100971', '-59.589721441334405'),
+(7, 'Sunshine Suites', 'Esterley Tibbetts Highway', '1465', 'KY1-1201', 'Safehaven', 'Cayman Islands', 'America', '+1-345-9493000', 'info@sunshinesuites.com', 'www.sunshinesuites.com', 132, 4, '19.338549961989838', '-81.37841999530787'),
+(8, 'East Winds Inn', 'La Brelotte Bay', '', '', 'Gros Islet', 'Saint Lucia', 'America', '+1-758-4528212', 'eastwinds@candw.lc', 'www.eastwinds.com', 31, 4, '14.053917070755926', '-60.97222477197647'),
+(9, 'The Buccaneer', 'Estate Shoys', '5007', '00820-4536', 'Christiansted', 'U.S. Virgin Islands', 'America', '+1-340-7122100', 'reservations@thebuccaneer.com', 'www.thebuccaneer.com', 138, 4, '17.754311667779263', '-64.68129068613052'),
+(10, 'Posada Viena', 'Marsella', '28', '06600', 'Mexico City', 'Mexico', 'America', '+52-55-5660700', 'reservaciones@posadavienahotel.com', 'www.posadavienahotel.com.mx', 88, 4, '19.426085847701536', '-99.15776565670967'),
+(11, 'Robin\'s Nest', 'Vale Close', '10', 'HM 04', 'Pembroke', 'Bermuda', 'America', '+1-441-2924347', 'robinsnest@cwbda.bm', 'www.robinsnestbda.com', 8, 0, '32.303315119885845', '-64.78095352649689'),
+(12, 'Reefs', 'South Shore Road', '56', 'SN 02', 'Southampton', 'Bermuda', 'America', '+1-441-2380222', 'generalinfo@thereefs.bm', 'www.thereefs.com', 61, 4, '32.24919865310582', '-64.83940958976746'),
+(13, 'Edgewater', 'Main St', '101', 'Y1A 2A7', 'Whitehorse', 'Canada', 'America', '+1-867-6672572', 'reservations@yukonhotels.com', 'www.yukonhotels.com', 30, 3, '60.71985271935393', '-135.05063474178314'),
+(14, 'Deerwood Inn', 'SW Old Saint Augustine Rd', '155', '32340-4762', 'Madison', 'United States', 'America', '+1-850-9732504', 'reservations@deerwoodinn.com', 'www.deerwoodinn.com', 32, 0, '30.392286113208126', '-83.35533946752548'),
+(15, 'Red Roof Inn Chicago Downtown Magnificent Mile', 'E Ontario St', '162', '60611-2809', 'Chicago', 'United States', 'America', '+1-312-7873580', 'info@redroof.com', 'www.redroof.com', 195, 2, '41.89341372796625', '-87.62292981147766'),
+(16, 'French Market Inn', 'Decatur St', '509', '70130-1027', 'New Orleans', 'United States', 'America', '+1-504-5615621', 'hotels@frenchquarter.com', 'www.valentinohotels.com', 124, 2, '29.95524479185923', '-90.06423488259315'),
+(17, 'Best Western Inn West Monroe', 'Thomas Rd', '405', '71291-7938', 'West Monroe', 'United States', 'America', '+1-318-3229922', 'customerservice@bestwestern.com', 'www.bestwestern.com', 52, 3, '32.50231788863051', '-92.1564269810915'),
+(18, 'Crowne Plaza Chengdu City Centre', 'Zong Fu Street', '31', '610016', 'Chengdu', 'China', 'Asia', '+86-28-86786666', 'info@ichotelsgroup.com', 'www.ihg.com', 402, 5, '30.658982127555657', '104.07699465751648'),
+(19, 'Jumeirah at Etihad Towers Residence', 'West Corniche', '', '', 'Abu Dhabi', 'United Arab Emirates', 'Asia', '+971-2-8115888', 'info@jumeirah.com', 'www.jumeirah.com', 199, 5, '24.4583834945825', '54.321864545345306'),
+(20, 'Jumeirah Zabeel Saray', 'The Crescent (West)', '', '', 'Dubai', 'United Arab Emirates', 'Asia', '+971-4-4530000', 'info@jumeirah.com', 'www.jumeirah.com', 443, 5, '25.097836648628107', '55.12348294258118'),
+(21, 'Victoria Gate', 'Victoria Gate', '74', 'BT47 2TQ', 'Londonderry', 'United Kingdom', 'Europe', '+44-784-3088828', 'victoriagate@hotmail.co.uk', 'www.victoriagatederry.com', 2, 4, '54.98310555395879', '-7.3255205154418945'),
+(22, 'Batty Langley\'s', 'Folgate Street', '12', 'E1 6BX', 'London', 'United Kingdom', 'Europe', '+44-20-73774390', 'caroline@hazlitts.co.uk', 'www.hazlitts.co.uk', 29, 5, '51.52090719683514', '-0.07790937063907677'),
+(23, 'Mere Cottage', 'Crewe Road', '118', 'ST7 2JA', 'Alsager', 'United Kingdom', 'Europe', '+44-1270-361743', 'merecottage@outlook.com', 'www.merecottagealsager.co.uk', 4, 0, '53.095480148710315', '-2.313050164417973'),
+(24, 'Renaissance London Heathrow', 'Bath Road', '', 'TW6 2AQ', 'Hounslow', 'United Kingdom', 'Europe', '+44-20-88976363', 'customerservice@marriott.com', 'www.marriott.com', 649, 4, '51.480632999999997', '-0.44665199999999999'),
+(25, 'Boston Court', 'Upper Berkeley Street', '26', 'W1H 7QL', 'London', 'United Kingdom', 'Europe', '+44-20-77231445', 'info@bostoncourthotel.co.uk', 'www.bostoncourthotel.co.uk', 15, 2, '51.515366967460054', '-0.1610572636127472'),
+(26, 'The Wyche', 'Wyche Road', '74', 'WR14 4EQ', 'Malvern', 'United Kingdom', 'Europe', '+44-1684-575396', 'thewycheinn@googlemail.com', 'www.thewycheinn.co.uk', 6, 4, '52.09148165852654', '-2.33771413564682'),
+(27, 'The Connaught Inn', 'Spencer Street', '', '', 'Castlebar', 'Ireland', 'Europe', '+353-86-7285555', 'info@theconnaughtinn.com', 'www.theconnaughtinn.com', 16, 3, '53.854021731535695', '-9.295845773155179'),
+(28, 'Runggnerhof', 'Runggner Weg', '2', '39040', 'Tramin an der Weinstraße', 'Italy', 'Europe', '+39-0471-860561', 'info@gallorosso.it', 'www.roterhahn.it', 4, 0, '46.32942633598124', '11.235171050262466'),
+(29, 'Castello di Monte Antico', 'Via Castello di Monte Antico Alto', '5', '58045', 'Paganico', 'Italy', 'Europe', '+39-0564-991037', 'castellodimonteantico@hotmail.it', 'www.castellodimonteantico.it', 15, 3, '42.99197860004979', '11.359574870477331'),
+(30, 'Figueira', 'Praça da Figueira', '16', '1100-241', 'Lisbon', 'Portugal', 'Europe', '+351-210-492940', 'reservations@thebeautiquehotels.com', 'www.thebeautiquehotels.com', 50, 4, '38.71330766743014', '-9.137616902589798'),
+(31, 'PortoBay Marquês', 'Rua Duque de Palmela', '32', '1250-098', 'Lisbon', 'Portugal', 'Europe', '+351-21-0032700', 'info@portobay.pt', 'www.portobay.com', 72, 4, '38.723847720173154', '-9.150150865316391'),
+(32, 'Cinquentenário', 'Rua Francisco Marto', '175', '2495-448', 'Fatima', 'Portugal', 'Europe', '+351-249-530400', 'hotel@hotelcinquentenario.com', 'www.hotelcinquentenario.com', 196, 4, '39.629279544299216', '-8.67097020149231'),
+(33, 'Cascais Miragem', 'Avenida Marginal', '8554', '2754-536', 'Cascais', 'Portugal', 'Europe', '+351-210-060600', 'geral@cascaismirage.com', 'www.cascaismirage.com', 192, 5, '38.70232774364404', '-9.410842538272846'),
+(34, 'Dighton', 'Largo da República', '', '3720-241', 'Oliveira de Azemeis', 'Portugal', 'Europe', '+351-256-682191', 'info@hotel-dighton.com', 'www.hotel-dighton.com', 93, 4, '40.83862129614923', '-8.478610217571259'),
+(35, 'Boavista Palace', 'Rua Doutor Emílio Peres', '74', '4050-007', 'Porto', 'Portugal', 'Europe', '+351-224-055846', 'comercial@hn-serviced-apartments.com', 'www.hn-serviced-apartments.com', 70, 4, '41.157461302804499', '-8.6234951019287092'),
+(36, 'Santo André', 'Avenida de Santo André', '', '4495-012', 'Povoa de Varzim', 'Portugal', 'Europe', '+351-252-615666', 'geral@hotelsantoandre.com', 'www.hotelsantoandre.com', 55, 4, '41.4161860123664', '-8.785293327847285'),
+(37, 'Vidago Palace', 'Parque de Vidago', '', '5425-307', 'Vidago', 'Portugal', 'Europe', '+351-276-990920', 'reservations@vidagopalace.com', 'www.vidagopalace.com', 70, 5, '41.632917896383098', '-7.5752878189086896'),
+(38, 'Balaia Plaza', 'Estrada de Santa Eulália', '', '8200-913', 'Albufeira', 'Portugal', 'Europe', '+351-289-583720', 'geral@balaiaplaza.pt', 'www.balaiaplaza.pt', 76, 4, '37.091779202571914', '-8.21004331111908'),
+(39, 'Tiles Madeira', 'Rua do Gorgulho', '1', '9004-540', 'Funchal', 'Portugal', 'Europe', '+351-291-700500', 'manager@tilesmadeirahotel.com', 'www.tilesmadeirahotel.com', 115, 4, '32.63781075188518', '-16.93062700331211'),
+(40, 'Angra Marina', 'Rua Pêro de Barcelos', '', '9700-151', 'Angra do Heroísmo', 'Portugal', 'Europe', '+351-295-204700', 'reservations@angramarinahotel.com', 'www.angramarinahotel.com', 130, 5, '38.652765154599699', '-27.215194702148398'),
+(41, 'Alpenblick', 'Alte Landesstraße', '6', '5700', 'Zell', 'Austria', 'Europe', '+43-6542-5433', 'hotel@alpenblick.at', 'www.alpenblick.at', 100, 4, '47.307382883079825', '12.792636305093765'),
+(42, 'Vorderronach', 'Ronachweg', '47', '5753', 'Saalbach-Hinterglemm', 'Austria', 'Europe', '+43-6541-6447', 'hotel@vorderronach.at', 'www.vorderronach.at', 32, 3, '47.391071854370736', '12.647913694381714'),
+(43, 'Arkadenhof Kurtz', 'Wolfauer Straße', '41', '7411', 'Markt Allhau', 'Austria', 'Europe', '+43-3356-8414', 'office@urlaubambauernhof.at', 'www.urlaubambauernhof.at', 3, 3, '47.28475326403321', '16.085114255547523'),
+(44, 'Haus Dabaklamm', 'Burg', '14', '9981', 'Kals', 'Austria', 'Europe', '+43-4876-8273', 'info@dabaklamm-kals.at', 'www.dabaklamm-kals.at', 5, 0, '47.0260982528362', '12.63240784406662'),
+(45, 'Mirabeau', 'Rue de Ranson', '72', '1936', 'Verbier', 'Switzerland', 'Europe', '+41-27-7716335', 'mirabeau@verbier.ch', 'www.mirabeauhotel.ch', 23, 3, '46.09490653985266', '7.232095822691917'),
+(46, 'Fontana', 'Moos', '10', '2513', 'Twann', 'Switzerland', 'Europe', '+41-32-3150303', 'info@rooms.ch', 'www.rooms.ch', 20, 3, '47.093679455842604', '7.155302166938782'),
+(47, 'Keller', 'Bollstieg', '22', '8260', 'Stein', 'Switzerland', 'Europe', '+41-52-7414544', 'bnbsteinamrhein@bluewin.ch', 'www.bnb.ch/index.php?p=page&id=569', 2, 0, '47.66041818929044', '8.869418799877167'),
+(48, 'B&D', 'Lützowstr.', '1', '30159', 'Hannover', 'Germany', 'Europe', '+49-511-35340170', 'info@bd-hotel-hannover.de', 'www.bd-hotel-hannover.de', 25, 2, '52.37497039455815', '9.730163812637329'),
+(49, 'Heide-Camp', 'Waldbad', '1', '39326', 'Colbitz', 'Germany', 'Europe', '+49-39207-80291', 'info@heide-camp-colbitz.de', 'www.heide-camp-colbitz.de', 30, 2, '52.331166000000003', '11.631436000000001'),
+(50, 'B&B Hamm', 'Willy-Brandt-Platz', '5', '59065', 'Hamm', 'Germany', 'Europe', '+49-2381-9560-0', 'commercial@hotelbb.com', 'www.hotelbb.com', 92, 2, '51.67830718424746', '7.810299843495159'),
+(51, 'Bleckmanns Hof', 'Wesseler Str.', '6', '59368', 'Werne', 'Germany', 'Europe', '+49-2389-3142', 'info@hof-bleckmann.de', 'www.hof-bleckmann.de', 17, 3, '51.68882013227894', '7.63823926448822'),
+(52, 'Freuschle', 'Obere Mühlstr.', '3', '86825', 'Bad Wörishofen', 'Germany', 'Europe', '+49-8247-90187', 'info@kurhotel-freuschle.de', 'www.kurhotel-freuschle.de', 25, 2, '48.00116494089381', '10.591469407081604'),
+(53, 'Bienvenue', 'Rue Buffault', '23', '75009', 'Paris', 'Metropolitan France', 'Europe', '+33-1-48783218', 'hotel@hotelbienvenue.fr', 'www.hotelbienvenue.fr', 38, 2, '48.87611497683774', '2.3421793431043625'),
+(54, 'Boronali', 'Rue de Clignancourt', '65', '75018', 'Paris', 'Metropolitan France', 'Europe', '+33-1-46064152', 'contact@hotel-boronali.com', 'www.hotel-boronali.com', 36, 3, '48.88867130450088', '2.3479655385017395'),
+(55, 'Mana Island', 'Namoli Street', '33', '', 'Mana Island', 'Fiji', 'Oceania', '+679-6650423', 'info@manafiji.com', 'www.manafiji.com', 152, 4, '-17.674441359163474', '177.10463047027588');
+
+--
+-- Indexen voor geëxporteerde tabellen
+--
+
+--
+-- Indexen voor tabel `booking`
+--
+ALTER TABLE `booking`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexen voor tabel `hotel`
+--
+ALTER TABLE `hotel`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT voor geëxporteerde tabellen
+--
+
+--
+-- AUTO_INCREMENT voor een tabel `booking`
+--
+ALTER TABLE `booking`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT voor een tabel `hotel`
+--
+ALTER TABLE `hotel`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
